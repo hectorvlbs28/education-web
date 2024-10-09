@@ -1,0 +1,85 @@
+import ActiveStep from '../assets/icons/ActiveStep.svg';
+import InactiveStep from '../assets/icons/InactiveStep.svg';
+import DoneStep from '../assets/icons/DoneStep.svg';
+import Done from '../assets/icons/Done.svg';
+import MailIcon from '../assets/icons/MailIcon.svg';
+import UserIcon from '../assets/icons/UserIcon.svg';
+import PM1 from '../assets/icons/PM1.svg';
+import PM2 from '../assets/icons/PM2.svg';
+import PM3 from '../assets/icons/PM3.svg';
+import FilePink from '../assets/icons/FilePink.svg';
+import FileBlue from '../assets/icons/FileBlue.svg';
+import UploadFile from '../assets/icons/UploadFile.svg';
+import DeleteIcon from '../assets/icons/DeleteIcon.svg';
+import DressIcon from '../assets/icons/DressIcon.svg';
+import LectraIcon from '../assets/icons/LectraIcon.svg';
+import GerberIcon from '../assets/icons/GerberIcon.svg';
+import ManiquiIcon from '../assets/icons/ManiquiIcon.svg';
+import IfashionMX from '../assets/backgrounds/IfashionMX.svg';
+import AspirantesHome from '../assets/icons/AspirantesHome.svg';
+import HouseSimple from '../assets/icons/HouseSimple.svg';
+import UserCircle from '../assets/icons/UserCircle.svg';
+import Student from '../assets/icons/Student.svg';
+import HouseSimpleViolet from '../assets/icons/HouseSimpleViolet.svg';
+import UserCircleViolet from '../assets/icons/UserCircleViolet.svg';
+import StudentViolet from '../assets/icons/StudentViolet.svg';
+import Users from '../assets/icons/Users.svg';
+import UsersViolet from '../assets/icons/UsersViolet.svg';
+import UsersFour from '../assets/icons/UsersFour.svg';
+import UsersFourViolet from '../assets/icons/UsersFourViolet.svg';
+import CreditCard from '../assets/icons/CreditCard.svg';
+import CreditCardViolet from '../assets/icons/CreditCardViolet.svg';
+import Bell from '../assets/icons/Bell.svg';
+import CaretDown from '../assets/icons/CaretDown.svg';
+import MagnifyingGlass from '../assets/icons/MagnifyingGlass.svg';
+import DotsThreeVerticalBlue from '../assets/icons/DotsThreeVerticalBlue.svg';
+import DownloadSimpleViolet from '../assets/icons/DownloadSimpleViolet.svg';
+import BlockViolet from '../assets/icons/BlockViolet.svg';
+import VISA from '../assets/icons/VISA.svg';
+import CoursesEmpty from '../assets/icons/CoursesEmpty.svg';
+import Computer from '../assets/icons/computer.svg'
+
+const SvgIcons = {
+  ActiveStep: ActiveStep as string,
+  InactiveStep: InactiveStep as string,
+  DoneStep: DoneStep as string,
+  Done: Done as string,
+  MailIcon: MailIcon as string,
+  UserIcon: UserIcon as string,
+  PM1: PM1 as string,
+  PM2: PM2 as string,
+  PM3: PM3 as string,
+  FilePink: FilePink as string,
+  FileBlue: FileBlue as string,
+  UploadFile: UploadFile as string,
+  DeleteIcon: DeleteIcon as string,
+  DressIcon: DressIcon as string,
+  LectraIcon: LectraIcon as string,
+  GerberIcon: GerberIcon as string,
+  ManiquiIcon: ManiquiIcon as string,
+  IfashionMX: IfashionMX as string,
+  AspirantesHome: AspirantesHome as string,
+  HouseSimple: HouseSimple as string,
+  UserCircle: UserCircle as string,
+  Student: Student as string,
+  HouseSimpleViolet: HouseSimpleViolet as string,
+  UserCircleViolet: UserCircleViolet as string,
+  StudentViolet: StudentViolet as string,
+  Users: Users as string,
+  UsersViolet: UsersViolet as string,
+  UsersFour: UsersFour as string,
+  UsersFourViolet: UsersFourViolet as string,
+  CreditCard: CreditCard as string,
+  CreditCardViolet: CreditCardViolet as string,
+  Bell: Bell as string,
+  CaretDown: CaretDown as string,
+  MagnifyingGlass: MagnifyingGlass as string,
+  DotsThreeVerticalBlue: DotsThreeVerticalBlue as string,
+  DownloadSimpleViolet: DownloadSimpleViolet as string,
+  BlockViolet: BlockViolet as string,
+  VISA: VISA as string,
+  CoursesEmpty: CoursesEmpty as string,
+  Computer: Computer as string,
+};
+
+export default SvgIcons;

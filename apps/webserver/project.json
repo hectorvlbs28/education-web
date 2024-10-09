@@ -1,0 +1,59 @@
+{
+  "name": "webserver",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/webserver/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "webserver:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "webserver:build:development"
+        },
+        "production": {
+          "buildTarget": "webserver:build:production"
+        }
+      }
+    },
+    "typeorm": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "ts-node --project tsconfig.base.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+      }
+    },
+    "db-migration-gen": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "nx run webserver:typeorm -- migration:generate -d dist/apps/webserver/orm-config.js apps/webserver/src/database/migrations/{args.name}"
+      }
+    },
+    "db-migration-create": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "nx run webserver:typeorm -- migration:create apps/webserver/src/database/migrations/{args.name}"
+      }
+    },
+    "db-migration-run": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "commands": ["nx run webserver:typeorm -- -d dist/apps/webserver/orm-config.js migration:run"]
+      }
+    },
+    "db-migration-revert": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "commands": ["nx run webserver:typeorm -- -d dist/apps/webserver/orm-config.js migration:revert"]
+      }
+    }
+  }
+}

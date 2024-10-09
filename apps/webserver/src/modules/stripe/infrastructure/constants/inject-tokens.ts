@@ -1,0 +1,2 @@
+export const STRIPE_SERVICE = Symbol('STRIPE_SERVICE');
+export const CONTRACT_REPOSITORY = Symbol('CONTRACT_REPOSITORY');
